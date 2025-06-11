@@ -5,6 +5,7 @@ __pycache__/
 venv/
 .vscode/
 *.csv
+!data/ThoracicCancerSurgery.csv  # Exception for this specific file
 .DS_Store
 
 
