@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.git
+*.csv  # optionally exclude big CSV if you mount it instead
+tests/
+docs/

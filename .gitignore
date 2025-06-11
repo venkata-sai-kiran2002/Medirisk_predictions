@@ -1,19 +1,11 @@
-# Ignore model files
-*scaler.pkl
-*thoracic_surgery_risk_model.pkl
-
-# Ignore Docker-related files
-Dockerfile
-.dockerignore
-docker-compose.yml
-
-# Ignore Python cache files and virtual environments
 __pycache__/
-
-
-# Ignore virtual environment folders
-venv/
+*.pyc
+*.pkl
 .env
+venv/
+.vscode/
+*.csv
+.DS_Store
 
 
 
