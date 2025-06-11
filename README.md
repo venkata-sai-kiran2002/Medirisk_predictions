@@ -15,10 +15,10 @@ A web application that predicts post-operative life expectancy for thoracic canc
 
 ## Technology Stack
 
-- **Backend**: Flask (Python)
+- **Backend**: Flask framework (Python)
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
 - **Database**: MongoDB (for storing prediction history)
-- **Machine Learning**: TensorFlow, Scikit-learn, XGBoost
+- **Machine Learning**: Scikit-learn, Hyper tunning with Logistic Regression model for the predictions and comparing the each other with Random Forest and SVm for the better performance of the model to get perfect prediction results.
 
 ## Installation
 
