@@ -16,7 +16,7 @@ load_dotenv()
 users_predictions_collection=db['predictions']
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'your_very_secure_secret_key_change_this_in_production')
+app.secret_key = os.getenv('SECRET_KEY')
 
 # Configure server name for proper URL generation
 app.config['PREFERRED_URL_SCHEME'] = os.getenv('PREFERRED_URL_SCHEME', 'https')
