@@ -1,10 +1,10 @@
+version: "3.9"
+
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: cancer_prediction 
-    container_name: thoracic_surgery_predictions
+    build: .
+    image: medirisk
+    container_name: thoracic_predictions
     environment:
       - APP_HOST=0.0.0.0
       - APP_PORT=5000
@@ -13,6 +13,14 @@ services:
       - JWT_SECRET_KEY=your_very_secure_secret_key_change_this_in_production
       - SECRET_KEY=your_flask_secret_key_here
     volumes:
-      - ./static:/app/static:rw
+      - .:/app
+      - ./static:/app/static
+      - ./static/images:/app/static/images
     ports:
       - "5000:5000"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
