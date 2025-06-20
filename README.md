@@ -8,16 +8,16 @@ A web application that predicts post-operative life expectancy for thoracic canc
 ## Features
 
 - Patient data input through a user-friendly interface
-- Risk assessment with probability estimation
+- Risk assessment with probability estimation and risk levels
 - Detailed visualization of results
-- History tracking of previous predictions
-- RESTful API for integration with other systems
+- History tracking of previous predictions and Analysis of that particular individual patient's data
+- RESTful API for integration with other systems(Endpoints)
 
 ## Technology Stack
 
 - **Backend**: Flask framework (Python)
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
-- **Database**: MongoDB (for storing prediction history)
+- **Database**: MongoDB (for storing prediction history and user Authentication)
 - **Machine Learning**: Scikit-learn, Hyper tunning with Logistic Regression model for the predictions and comparing the each other with Random Forest and SVm for the better performance of the model to get perfect prediction results.
 
 ## Installation
@@ -36,11 +36,9 @@ pip install -r requirements.txt
 ```
 
 3. Run the application:
-```
-python app.py
-```
-
-4. Open your web browser and navigate to `http://127.0.0.1:5000/`
+   - Run the model.py  (To load and save the model training data and Getting the results of the model)   
+   - Run the app.py    (To run the Flask application)
+4. Open your web browser and navigate to `http://127.0.0.1:5000/`  (To access the web application in Local Host)
 
 ## Data Input Parameters
 
